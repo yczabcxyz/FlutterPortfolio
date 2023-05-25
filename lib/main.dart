@@ -7,7 +7,7 @@ import 'package:flutter/widgets.dart';
 import 'configure/navigation_service.dart';
 
 void main() async {
-    WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   final savedThemeMode = await AdaptiveTheme.getThemeMode();
   setupLocator();
   runApp(MyApp(savedThemeMode: savedThemeMode));
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       initial: savedThemeMode ?? AdaptiveThemeMode.light,
       builder: (theme, darkTheme) => MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'DeveloperFolio',
+        title: 'Annie Zhan',
         theme: theme,
         darkTheme: darkTheme,
         home: LayoutTemplate(),

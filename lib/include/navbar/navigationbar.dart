@@ -21,7 +21,7 @@ class NavbarItem extends StatelessWidget {
       onTap: () {
         locator<NavigationService>().navigateTo(navigationPath);
       },
-          child: Text(
+      child: Text(
         title,
         style: TextStyle(fontSize: 18),
       ),
@@ -46,57 +46,34 @@ class NavbarTbDt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 50,
-        child: Row(
-    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    children: <Widget>[
-      GestureDetector(
-       onTap: (){html.window.location.reload();},
-        child: NavbarLogo()),
-      SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-              child: Container(
+      height: 50,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          GestureDetector(
+              onTap: () {
+                html.window.location.reload();
+              },
+              child: NavbarLogo()),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Container(
               child: Row(
                 mainAxisSize: MainAxisSize.min,
-                children: <Widget>[          
-                   NavbarItem('Home', HomeRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Skills', SkillsRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Education', EducationRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Achievements', AchievementsRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Blogs', BlogRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Contact', ContactRoute),
-                  SizedBox(
-                    width: 10,
-                  ),
+                children: <Widget>[
                   IconButton(
-              onPressed: () {
-                AdaptiveTheme.of(context).toggleThemeMode();
-              },
-              
-              icon: Icon(Icons.brightness_3, size: 25),
-            ),
+                    onPressed: () {
+                      AdaptiveTheme.of(context).toggleThemeMode();
+                    },
+                    icon: Icon(Icons.brightness_3, size: 25),
+                  ),
                 ],
               ),
             ),
+          ),
+        ],
       ),
-    ],
-        ),
-      );
+    );
   }
 }
 
@@ -111,27 +88,20 @@ class NavbarMob extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           GestureDetector(
-            onTap: (){html.window.location.reload();},
-            child: NavbarLogo()),
-          Expanded(child: Container(
+              onTap: () {
+                html.window.location.reload();
+              },
+              child: NavbarLogo()),
+          Expanded(
+              child: Container(
             width: 100,
           )),
-             IconButton(
-                alignment: Alignment.topRight,
-                      onPressed: () {
-                        AdaptiveTheme.of(context).toggleThemeMode();
-                      },
-                      icon: Icon(Icons.brightness_3, size: 25),
-                    ),
           IconButton(
             alignment: Alignment.topRight,
-            icon: Icon(
-              FontAwesomeIcons.bars,
-            ),
             onPressed: () {
-                Scaffold.of(context).openEndDrawer();
-              
+              AdaptiveTheme.of(context).toggleThemeMode();
             },
+            icon: Icon(Icons.brightness_3, size: 25),
           ),
         ],
       ),

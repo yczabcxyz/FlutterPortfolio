@@ -10,36 +10,44 @@ class SkillBarDesk extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('Proficiency', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 50),),
-          SizedBox(height: 30,),
-          Text('Frontend/Design', style: TextStyle(fontSize: 18),), 
-        RoundedProgressBar(
-    style: RoundedProgressBarStyle(
-        borderWidth: 0, 
-        widthShadow: 0),
-    margin: EdgeInsets.symmetric(vertical: 16),
-    borderRadius: BorderRadius.circular(24),
-    percent: 90,
-),
-     Text('Adobe Photoshop/Premiere pro', style: TextStyle(fontSize: 18),),
-     RoundedProgressBar(
-    style: RoundedProgressBarStyle(
-        borderWidth: 0, 
-        widthShadow: 0),
-    margin: EdgeInsets.symmetric(vertical: 16),
-    borderRadius: BorderRadius.circular(24),
-    percent: 75,
-),
-     Text('Programming', style: TextStyle(fontSize: 18),),
-       RoundedProgressBar(
-    style: RoundedProgressBarStyle(
-        borderWidth: 0, 
-        widthShadow: 0),
-    margin: EdgeInsets.symmetric(vertical: 16),
-    borderRadius: BorderRadius.circular(24),
-    percent: 60,
-),
-        ], 
+          Text(
+            'Proficiency',
+            style: TextStyle(fontWeight: FontWeight.w600, fontSize: 50),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Text(
+            'Backend/Frontend Engineering',
+            style: TextStyle(fontSize: 18),
+          ),
+          RoundedProgressBar(
+            style: RoundedProgressBarStyle(borderWidth: 0, widthShadow: 0),
+            margin: EdgeInsets.symmetric(vertical: 16),
+            borderRadius: BorderRadius.circular(24),
+            percent: 90,
+          ),
+          Text(
+            'High performance computing',
+            style: TextStyle(fontSize: 18),
+          ),
+          RoundedProgressBar(
+            style: RoundedProgressBarStyle(borderWidth: 0, widthShadow: 0),
+            margin: EdgeInsets.symmetric(vertical: 16),
+            borderRadius: BorderRadius.circular(24),
+            percent: 75,
+          ),
+          Text(
+            'Machine Learning/Deep Learning',
+            style: TextStyle(fontSize: 18),
+          ),
+          RoundedProgressBar(
+            style: RoundedProgressBarStyle(borderWidth: 0, widthShadow: 0),
+            margin: EdgeInsets.symmetric(vertical: 16),
+            borderRadius: BorderRadius.circular(24),
+            percent: 60,
+          ),
+        ],
       ),
     );
   }
@@ -49,41 +57,48 @@ class SkillBarTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-          child: Container(
-          width: 600,
+      child: Container(
+        width: 600,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('Proficiency', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 50),),
-            SizedBox(height: 30,),
-           Text('Frontend/Design', style: TextStyle(fontSize: 18),),
-          RoundedProgressBar(
-    style: RoundedProgressBarStyle(
-        borderWidth: 0, 
-        widthShadow: 0),
-    margin: EdgeInsets.symmetric(vertical: 16),
-    borderRadius: BorderRadius.circular(24),
-    percent: 90,
-),
-       Text('Adobe Photoshop/Premiere pro', style: TextStyle(fontSize: 18),),
-      RoundedProgressBar(
-    style: RoundedProgressBarStyle(
-        borderWidth: 0, 
-        widthShadow: 0),
-    margin: EdgeInsets.symmetric(vertical: 16),
-    borderRadius: BorderRadius.circular(24),
-    percent: 75,
-),
-       Text('Programming', style: TextStyle(fontSize: 18),),
-         RoundedProgressBar(
-    style: RoundedProgressBarStyle(
-        borderWidth: 0, 
-        widthShadow: 0),
-    margin: EdgeInsets.symmetric(vertical: 16),
-    borderRadius: BorderRadius.circular(24),
-    percent: 60,
-),
-
+            Text(
+              'Proficiency',
+              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 50),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Text(
+              'Backend/Frontend Engineering',
+              style: TextStyle(fontSize: 18),
+            ),
+            RoundedProgressBar(
+              style: RoundedProgressBarStyle(borderWidth: 0, widthShadow: 0),
+              margin: EdgeInsets.symmetric(vertical: 16),
+              borderRadius: BorderRadius.circular(24),
+              percent: 90,
+            ),
+            Text(
+              'High performance computing',
+              style: TextStyle(fontSize: 18),
+            ),
+            RoundedProgressBar(
+              style: RoundedProgressBarStyle(borderWidth: 0, widthShadow: 0),
+              margin: EdgeInsets.symmetric(vertical: 16),
+              borderRadius: BorderRadius.circular(24),
+              percent: 75,
+            ),
+            Text(
+              'Machine Learning/Deep Learning',
+              style: TextStyle(fontSize: 18),
+            ),
+            RoundedProgressBar(
+              style: RoundedProgressBarStyle(borderWidth: 0, widthShadow: 0),
+              margin: EdgeInsets.symmetric(vertical: 16),
+              borderRadius: BorderRadius.circular(24),
+              percent: 60,
+            ),
           ],
         ),
       ),
@@ -95,40 +110,48 @@ class SkillBarMob extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-          child: Container(
-          width: 600,
+      child: Container(
+        width: 600,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-          Text('Proficiency', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 32),),
-            SizedBox(height: 30,),
-           Text('Frontend/Design', style: TextStyle(fontSize: 18),),
-          RoundedProgressBar(
-    style: RoundedProgressBarStyle(
-        borderWidth: 0, 
-        widthShadow: 0),
-    margin: EdgeInsets.symmetric(vertical: 16),
-    borderRadius: BorderRadius.circular(24),
-    percent: 90,
-),
-       Text('Adobe Photoshop/Premiere pro', style: TextStyle(fontSize: 18),),
-      RoundedProgressBar(
-    style: RoundedProgressBarStyle(
-        borderWidth: 0, 
-        widthShadow: 0),
-    margin: EdgeInsets.symmetric(vertical: 16),
-    borderRadius: BorderRadius.circular(24),
-    percent: 75,
-),
-       Text('Programming', style: TextStyle(fontSize: 18),),
-          RoundedProgressBar(
-    style: RoundedProgressBarStyle(
-        borderWidth: 0, 
-        widthShadow: 0),
-    margin: EdgeInsets.symmetric(vertical: 16),
-    borderRadius: BorderRadius.circular(24),
-    percent: 60,
-),
+            Text(
+              'Proficiency',
+              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 32),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Text(
+              'Backend/Frontend Engineering',
+              style: TextStyle(fontSize: 18),
+            ),
+            RoundedProgressBar(
+              style: RoundedProgressBarStyle(borderWidth: 0, widthShadow: 0),
+              margin: EdgeInsets.symmetric(vertical: 16),
+              borderRadius: BorderRadius.circular(24),
+              percent: 90,
+            ),
+            Text(
+              'High performance computing',
+              style: TextStyle(fontSize: 18),
+            ),
+            RoundedProgressBar(
+              style: RoundedProgressBarStyle(borderWidth: 0, widthShadow: 0),
+              margin: EdgeInsets.symmetric(vertical: 16),
+              borderRadius: BorderRadius.circular(24),
+              percent: 75,
+            ),
+            Text(
+              'Machine Learning/Deep Learning',
+              style: TextStyle(fontSize: 18),
+            ),
+            RoundedProgressBar(
+              style: RoundedProgressBarStyle(borderWidth: 0, widthShadow: 0),
+              margin: EdgeInsets.symmetric(vertical: 16),
+              borderRadius: BorderRadius.circular(24),
+              percent: 60,
+            ),
           ],
         ),
       ),

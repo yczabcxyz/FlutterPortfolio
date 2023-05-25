@@ -10,10 +10,6 @@ import 'package:DeveloperFolio/include/imagesmain/images.dart';
 import 'package:DeveloperFolio/include/Rows/progressbarmain.dart';
 import 'package:DeveloperFolio/include/Rows/skillslogosmain.dart';
 import 'package:DeveloperFolio/include/Rows/welcomepagemain.dart';
-import 'package:DeveloperFolio/pages/blogpage.dart';
-import 'package:DeveloperFolio/pages/contactpage.dart';
-import 'package:DeveloperFolio/pages/educationpage.dart';
-import 'package:DeveloperFolio/pages/footer.dart';
 import 'package:DeveloperFolio/pages/progresspage.dart';
 import 'package:DeveloperFolio/pages/welcome.dart';
 import 'package:flutter/material.dart';
@@ -50,12 +46,10 @@ class _HomeDesktopState extends State<HomeDesktop> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Flexible(
-                          child: ListView(
+                child: ListView(
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
-
                   children: [
-                     
                     Row(
                       children: <Widget>[
                         Expanded(child: WelcomePage()),
@@ -96,7 +90,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                         Expanded(child: AchievementDesk()),
                       ],
                     ),
-                     SizedBox(
+                    SizedBox(
                       height: 75,
                     ),
                     Row(
@@ -104,22 +98,20 @@ class _HomeDesktopState extends State<HomeDesktop> {
                         Expanded(child: BlogCenterDesk()),
                       ],
                     ),
-                     SizedBox(
+                    SizedBox(
                       height: 75,
                     ),
-                     Row(
-                      children: [
-                        Expanded(child: ContactCenterDesk()),
-                        Expanded(child: FourDesk(),),
-                      ],
-                    ),
-                    SizedBox(height: 100,),
                     Row(
                       children: [
-                        Expanded(child: FooterPage()),
+                        Expanded(child: ContactCenterDesk()),
+                        Expanded(
+                          child: FourDesk(),
+                        ),
                       ],
                     ),
-                    
+                    SizedBox(
+                      height: 100,
+                    ),
                   ],
                 ),
               ),
@@ -140,7 +132,7 @@ class HomeMobile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-                  child: ListView(
+            child: ListView(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
               children: <Widget>[
@@ -152,8 +144,10 @@ class HomeMobile extends StatelessWidget {
                 AchievementMob(),
                 BlogCenterMob(),
                 ContactCenterMob(),
-                SizedBox(height: 50,),
-                FooterPage()
+                FourMob(),
+                SizedBox(
+                  height: 50,
+                ),
               ],
             ),
           ),
@@ -172,9 +166,9 @@ class HomeTab extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-                  child: ListView(   
-                    shrinkWrap: true,     
-                    physics: NeverScrollableScrollPhysics(),
+            child: ListView(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
               children: <Widget>[
                 WelcomePageTab(),
                 OneTab(),
@@ -184,8 +178,10 @@ class HomeTab extends StatelessWidget {
                 AchievementTab(),
                 BlogCenterTab(),
                 ContactCenterTab(),
-                SizedBox(height: 50,),
-                FooterMob(),
+                FourTab(),
+                SizedBox(
+                  height: 50,
+                ),
               ],
             ),
           ),
