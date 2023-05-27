@@ -132,7 +132,7 @@ class AchieveDesk extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'images/Pubmed-logo.png',
+                        'assets/images/Pubmed-logo.png',
                         width: 250,
                         height: 175,
                       ),
@@ -182,7 +182,7 @@ class AchieveDesk extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'images/codejam.png',
+                        'assets/images/codejam.png',
                         width: 250,
                         height: 175,
                       ),
@@ -352,7 +352,7 @@ class AchieveTab extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'images/Pubmed-logo.png',
+                              'assets/images/Pubmed-logo.png',
                               width: 250,
                               height: 175,
                             ),
@@ -403,7 +403,7 @@ class AchieveTab extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'images/codejam.png',
+                              'assets/images/codejam.png',
                               width: 250,
                               height: 175,
                             ),
@@ -576,7 +576,7 @@ class AchieveMob extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'images/Pubmed-logo.png',
+                              'assets/images/Pubmed-logo.png',
                               width: 250,
                               height: 175,
                             ),
@@ -627,7 +627,7 @@ class AchieveMob extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'images/codejam.png',
+                              'assets/images/codejam.png',
                               width: 250,
                               height: 175,
                             ),

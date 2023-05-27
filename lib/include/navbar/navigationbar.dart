@@ -1,7 +1,7 @@
 import 'package:DeveloperFolio/configure/centeredview.dart';
 import 'package:DeveloperFolio/configure/navigation_service.dart';
 import 'package:DeveloperFolio/configure/routing.dart';
-import 'dart:js' as js;
+// import 'dart:js' as js;
 import 'dart:html' as html;
 
 import 'package:adaptive_theme/adaptive_theme.dart';
